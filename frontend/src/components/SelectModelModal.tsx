@@ -3,6 +3,7 @@ interface SelectModelModalProps {
     setModel: React.Dispatch<React.SetStateAction<string>>;
     modelmodal: boolean;
     setModelmodal: React.Dispatch<React.SetStateAction<boolean>>;
+    setSettingModal: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export const SelectModelModal = (props: SelectModelModalProps) => {
     const hoverStyles = "bg-neutral-800/80 hover:bg-neutral-700/80 hover:scale-110 cursor-pointer transition-all duration-200";

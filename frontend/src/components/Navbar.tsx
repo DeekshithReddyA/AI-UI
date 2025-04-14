@@ -14,6 +14,7 @@ export const Navbar = (props: NavbarProps) => {
             onClick={(e) => {
              e.preventDefault();
             props.setModelmodal(!props.modelmodal);
+            props.setSettingModal(false);
             }}>
         <div className="text-lg font-bold text-white">
             {props.model}
@@ -27,6 +28,7 @@ export const Navbar = (props: NavbarProps) => {
                 (e) => {
                     e.preventDefault();
                     props.setSettingModal(true);
+                    props.setModelmodal(false);
                 }
             }>
         <Settings />
