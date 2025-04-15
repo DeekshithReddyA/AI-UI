@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 export const Navbar = (props: NavbarProps) => {
   return (
-    <div className={`h-20 w-full bg-neutral-800 flex items-center justify-between`}>
+    <div className={`h-12 w-full bg-neutral-800 flex items-center justify-between border`}>
       <div className={`m-2 ml-4 p-1 flex items-center cursor-pointer hover:bg-neutral-700/80 ${props.modelmodal ? "bg-neutral-700/80" : "bg-neutral-800"} rounded-lg hover:scale-110 transition-all duration-200`}
             onClick={(e) => {
              e.preventDefault();

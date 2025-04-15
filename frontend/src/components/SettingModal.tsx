@@ -17,13 +17,16 @@ export const SettingsModal = (props: SettingsModalProps) => {
         });
     }
     return (
+        <>
         <div className="p-4 m-10 bg-black rounded-md shadow-lg">
-            <div className="relative text-white cursor-pointer flex justify-end" onClick={(e) => {
+            <div className="flex flex-col items-end justify-center">
+                <div className="text-white cursor-pointer" onClick={(e) => {
                 e.preventDefault();
                 props.setSettingModal(false);
-                }}>
+            }}>
                 <X />
             </div>
+        </div>
             <div className="flex justify-center text-white mb-4">API Validation</div>
             <div className="flex flex-col space-y-2">
                 <div className="text-white">
@@ -49,6 +52,7 @@ export const SettingsModal = (props: SettingsModalProps) => {
                     props.setSettingModal(false);
                 }}>Save</button>
             </div>
-        </div>
+                </div>
+    </>
         )
 }
